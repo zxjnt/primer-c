@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define NUMBER 5
 
 void intary_rcpy(int v1[], const int v2[], int n) {
     for (int i = 0; i < n; i++) {
@@ -17,16 +18,17 @@ void print_array(const int v[], int n) {
 }
 
 int main(void) {
-    int ary1[] = {0};
-    int ary2[] = {1, 2, 3, 4, 5};
+
+    int source_arr[NUMBER] = {1, 2, 3, 4, 5};
+    int target_arr[NUMBER] = {0};
 
 
     printf("原数组：");
-    print_array(ary2, 5);
+    print_array(source_arr, NUMBER);
 
-    intary_rcpy(ary1, ary2, 5);
+    intary_rcpy(target_arr, source_arr, NUMBER);
     printf("倒序后：");
-    print_array(ary1, 5);
+    print_array(target_arr, NUMBER);
 
     return 0;
 }
