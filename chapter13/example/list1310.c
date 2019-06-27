@@ -1,44 +1,47 @@
 /*
-用字符和字符码显示文件内容
+    用字符和字符码显示文件内容
 */
 #include <ctype.h>
 #include <stdio.h>
 
-int main(void)
-{
-	int n;
-	unsigned long count = 0;
-	unsigned char buf[16];
-	FILE *fp;
-	char fname[FILENAME_MAX];
+int main(void) {
+    int n;
+    unsigned long count = 0;
+    unsigned char buf[16];
+    FILE *fp;
+    char fname[FILENAME_MAX];
 
-	printf("文件名:");
-	scanf("%s", fname);
+    printf("文件名:");
+    scanf("%s", fname);
 
-	if ((fp = fopen(fname, "rb")) == NULL)
-		printf("\a文件打开失败\n");
-	else {
-		while ((n = fread(buf, 1, 16, fp)) > 0) {
-			int i;
+    if ((fp = fopen(fname, "rb")) == NULL) {
+        printf("\a文件打开失败\n");
+    } else {
+        while ((n = fread(buf, 1, 16, fp)) > 0) {
+            int i;
 
-			printf("%08lX\n", count);
+            printf("%08lX\n", count);
 
-			for (i = 0; i < n; i++)
-				printf("%02X", (unsigned)buf[i]);
+            for (i = 0; i < n; i++) {
+                printf("%02X", (unsigned)buf[i]);
+            }
 
-			if (n < 16)
-				for (i = n; i < 16; i++)
-					printf("    ");
+            if (n < 16)
+                for (i = n; i < 16; i++) {
+                    printf("    ");
+                }
 
-			for (i = 0; i < n; i++)
-				putchar(isprint(buf[i]) ? buf[i] : '.');
+            for (i = 0; i < n; i++) {
+                putchar(isprint(buf[i]) ? buf[i] : '.');
+            }
 
-			putchar('\n');
+            putchar('\n');
 
-			count += 16;
-		}
-		fclose(fp);
-	}
+            count += 16;
+        }
 
-	return 0;
+        fclose(fp);
+    }
+
+    return 0;
 }
