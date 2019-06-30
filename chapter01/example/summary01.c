@@ -1,20 +1,19 @@
 /*
-求长方形的面积
+    求长方形的面积
 */
 #include <stdio.h>
 
-int main(void)
-{
-	int width;
-	int height;
+int main(void) {
+    int width;
+    int height;
 
-	puts("求长方形的面积。");
+    puts("求长方形的面积。");
 
-	printf("长："); scanf("%d", &width);
+    printf("长："); scanf("%d", &width);
 
-	printf("宽："); scanf("%d", &height);
+    printf("宽："); scanf("%d", &height);
 
-	printf("面积是%d\n", width * height);
+    printf("面积是%d\n", width * height);
 
-	return 0;
+    return 0;
 }

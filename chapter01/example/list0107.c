@@ -1,11 +1,10 @@
 /*
-打招呼并响铃3次
+    打招呼并响铃3次
 */
 #include <stdio.h>
 
-int main(void)
-{
-	printf("您好！\a\a\a\n");
+int main(void) {
+    printf("您好！\a\a\a\n");
 
-	return 0;
+    return 0;
 }
