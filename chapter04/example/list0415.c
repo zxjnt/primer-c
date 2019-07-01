@@ -1,20 +1,21 @@
 /*
-显示输入的整数值以下的约数
+    显示输入的整数值以下的约数
 */
 #include <stdio.h>
 
-int main(void)
-{
-	int i , n;
+int main(void) {
+    int i , n;
 
-	printf("整数值：");
-	scanf("%d", &n);
+    printf("整数值：");
+    scanf("%d", &n);
 
-	for (i = 1; i <= n; i ++) {
-		if (n % i == 0)
-			printf("%d ", i);
-	}
-	putchar('\n');
+    for (i = 1; i <= n; i ++) {
+        if (n % i == 0) {
+            printf("%d ", i);
+        }
+    }
 
-	return 0;
+    putchar('\n');
+
+    return 0;
 }

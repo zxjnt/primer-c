@@ -1,18 +1,19 @@
 /*
-输入一个整数，连续显示出该整数个*（for）
+    输入一个整数，连续显示出该整数个*（for）
 */
 #include <stdio.h>
 
-int main(void)
-{
-	int i, no;
-	
-	printf("请输入一个正整数：");
-	scanf("%d", &no);
+int main(void) {
+    int i, no;
 
-	for (i = 1; i <= no; i++)
-		putchar('*');
-	putchar('\n');
+    printf("请输入一个正整数：");
+    scanf("%d", &no);
 
-	return 0;
+    for (i = 1; i <= no; i++) {
+        putchar('*');
+    }
+
+    putchar('\n');
+
+    return 0;
 }
