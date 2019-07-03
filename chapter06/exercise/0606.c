@@ -13,5 +13,6 @@ int main(void) {
     printf("整数n:"); scanf("%d", &x);
 
     alert(x);
+
     return 0;
 }

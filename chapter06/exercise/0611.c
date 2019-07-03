@@ -28,7 +28,7 @@ int main(void) {
 
     int count = 0;
 
-    printf("目标数组："); 
+    printf("目标数组：");
     print_array(ary, 7);
 
     count = search_idx(ary, idx, 7, 7);

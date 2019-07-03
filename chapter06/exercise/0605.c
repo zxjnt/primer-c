@@ -17,5 +17,6 @@ int main(void) {
     printf("整数n:"); scanf("%d", &x);
 
     printf("1~n的所有整数和是%d。\n", sumup(x));
+    
     return 0;
 }

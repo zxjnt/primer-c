@@ -17,7 +17,6 @@ int main() {
     int ary[] = {3, 7, 2, 5, 9};
 
     for (int i = 0; i < 5; i++) {
-
         printf("%d  ", ary[i]);
     }
 
