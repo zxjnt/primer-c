@@ -19,7 +19,7 @@ int main(void) {
 
     puts("倒序排列了。");
 
-    for (i = 0; i < 7; i++) {
+    for (i = 0; i < NUMBER; i++) {
         printf("x[%d] = %d\n", i, x[i]);
     }
 
