@@ -48,7 +48,7 @@ unsigned power2(int n) {
     return x;
 }
 
-/*无符号整数x的第pos位设为1*/
+/*无符号整数x的第pos位设为1，注：pos从0开始计算*/
 unsigned set(unsigned x, int pos) {
     unsigned res_pos = (x >> pos) & 1U;
 
@@ -78,7 +78,7 @@ unsigned set(unsigned x, int pos) {
     */
 }
 
-/*无符号整数x的第pos位设为0*/
+/*无符号整数x的第pos位设为0，注：pos从0开始计算*/
 unsigned reset(unsigned x, int pos) {
     unsigned res_pos = (x >> pos) & 1U;
 
@@ -108,7 +108,7 @@ unsigned reset(unsigned x, int pos) {
     */
 }
 
-/*无符号整数x的第pos位取反*/
+/*无符号整数x的第pos位取反，注：pos从0开始计算*/
 unsigned inverse(unsigned x, int pos) {
     unsigned res_pos = (x >> pos) & 1U;
 

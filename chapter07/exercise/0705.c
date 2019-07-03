@@ -56,7 +56,7 @@ unsigned n1(int n) {
     return power2(n) - 1;
 }
 
-/*无符号整数x的第pos位到第pos+n-1位的n位设为1*/
+/*无符号整数x的第pos位到第pos+n-1位的n位设为1，注：pos从0开始计算*/
 unsigned set_n(unsigned x, int pos, int n) {
     unsigned result = 0;
 
@@ -74,7 +74,7 @@ unsigned set_n(unsigned x, int pos, int n) {
     return result;
 }
 
-/*无符号整数x的第pos位到第pos+n-1位的n位设为0*/
+/*无符号整数x的第pos位到第pos+n-1位的n位设为0，注：pos从0开始计算*/
 unsigned reset_n(unsigned x, int pos, int n) {
     unsigned result = 0;
 
@@ -89,7 +89,7 @@ unsigned reset_n(unsigned x, int pos, int n) {
     return result;
 }
 
-/*无符号整数x的第pos位到第pos+n-1位的n位取反*/
+/*无符号整数x的第pos位到第pos+n-1位的n位取反，注：pos从0开始计算*/
 unsigned inverse_n(unsigned x, int pos, int n) {
     unsigned result = x;
 

@@ -13,5 +13,6 @@ int main(void)
 	for (i = 0; i < no; i++)
 		sum += value;
 	printf("加法运算的结果是%f\n", sum);
+	
 	return 0;
 }

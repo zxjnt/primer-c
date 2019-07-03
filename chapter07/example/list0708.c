@@ -1,5 +1,5 @@
 /*
-以十进制、二进制、八进制和十六进制
+    以十进制、二进制、八进制和十六进制的形式显示0～65535
 */
 #include <stdio.h>
 
@@ -33,7 +33,7 @@ int main(void)
 {
 	unsigned i;
 
-	for (i = 0; i < 16U; i++) {
+	for (i = 0; i < 65535U; i++) {
 		printf("%5u  ", i);
 		print_nbits(i, 16);
 		printf("  %06o  %04X\n", i, i);

@@ -18,5 +18,6 @@ int main(void) {
     }
 
     printf("sum_y = %f\n", sum_y);
+    
     return 0;
 }
