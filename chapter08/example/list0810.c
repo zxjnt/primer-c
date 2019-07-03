@@ -1,21 +1,23 @@
 /*
-计算标准输入流中出现的数字字符数（2）
+    计算标准输入流中出现的数字字符数（2）
 */
 #include <stdio.h>
 
-int main(void)
-{
-	int i, ch;
-	int cnt[10] = {0};
-	
-	while ((ch = getchar()) != EOF) {
-		if (ch >= '0' && ch <= '9')
-			cnt[ch - '0']++;
-	}
+int main(void) {
+    int i, ch;
+    int cnt[10] = {0};
 
-	puts("数字字符出现的次数");
-	for (i = 0; i < 10; i++)
-		printf("'%d':%d\n", i, cnt[i]);
+    while ((ch = getchar()) != EOF) {
+        if (ch >= '0' && ch <= '9') {
+            cnt[ch - '0']++;
+        }
+    }
 
-	return 0;
+    puts("数字字符出现的次数");
+
+    for (i = 0; i < 10; i++) {
+        printf("'%d':%d\n", i, cnt[i]);
+    }
+
+    return 0;
 }
