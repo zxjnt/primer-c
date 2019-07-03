@@ -1,15 +1,15 @@
 /*
-字符串数组
+    字符串数组
 */
 #include <stdio.h>
 
-int main(void)
-{
-	int i;
-	char cs[][6] = {"Turbo", "NA", "DOHC"};
+int main(void) {
+    int i;
+    char cs[][6] = {"Turbo", "NA", "DOHC"};
 
-	for (i = 0; i < 3; i++)
-		printf("cs[%d] = \"%s\"\n", i, cs[i]);
+    for (i = 0; i < 3; i++) {
+        printf("cs[%d] = \"%s\"\n", i, cs[i]);
+    }
 
-	return 0;
+    return 0;
 }

@@ -5,23 +5,23 @@
 #define LEN 128
 
 /*显示字符串数组*/
-void put_strary(const char s[][LEN], int n)
-{
-	int i;
-	for (i = 0; i < n; i++)
-		printf("s[%d] = \"%s\"\n", i, s[i]);
+void put_strary(const char s[][LEN], int n) {
+    int i;
+
+    for (i = 0; i < n; i++) {
+        printf("s[%d] = \"%s\"\n", i, s[i]);
+    }
 }
 
-int main(void)
-{
-	char s[NUM][LEN];
+int main(void) {
+    char s[NUM][LEN];
 
-	int i;
-	int end = NUM;
+    int i;
+    int end = NUM;
 
     char str[] = "$$$$$";
 
-	for (i = 0; i < NUM; i++) {
+    for (i = 0; i < NUM; i++) {
         printf("s[%d] : ", i);
         scanf("%s", s[i]);
 
@@ -31,7 +31,7 @@ int main(void)
         }
     }
 
-	put_strary(s, end);
+    put_strary(s, end);
 
-	return 0;
+    return 0;
 }
