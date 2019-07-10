@@ -1,5 +1,5 @@
 /*
-用表示学生的结构体来现实佐中的信息
+    用表示学生的结构体来现实佐中的信息
 */
 #include <stdio.h>
 #include <string.h>
