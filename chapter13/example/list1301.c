@@ -3,14 +3,13 @@
 */
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     FILE *fp;
     fp = fopen("abc.txt", "r");
 
-    if (fp == NULL)
+    if (fp == NULL) {
         printf("\a无法打开文件。\n");
-    else {
+    } else {
         printf("\a成功打开了文件。\n");
         fclose(fp);
     }

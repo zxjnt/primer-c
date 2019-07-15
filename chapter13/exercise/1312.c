@@ -11,13 +11,10 @@ void get_data(void) {
     if ((fp = fopen(data_file, "rb")) == NULL) {
         printf("本程序第一次运行\n");
     } else {
-        printf("1\n");
         fread(timer, sizeof(struct tm), 1, fp);
-        printf("2\n");
         printf("上一次运行是在%d年%d月%d日%d时%d分%d秒\n",
                timer->tm_year + 1900, timer->tm_mon + 1, timer->tm_mday,
                timer->tm_hour, timer->tm_min, timer->tm_sec);
-        printf("3\n");
         fclose(fp);
     }
 }

@@ -4,8 +4,7 @@
 #include <time.h>
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     time_t current = time(NULL);/*当前日历时间*/
     struct tm *timer = localtime(&current);/*分解时间（当地时间）*/
     char *wday_name[] = {"日", "一", "二", "三", "四", "五", "六"};
